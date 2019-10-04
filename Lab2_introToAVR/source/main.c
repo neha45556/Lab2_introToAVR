@@ -25,9 +25,9 @@ int main(void) {
         tmpA = PINA & 0x01;
         tmpB = PINA & 0x02;
         if(tmpA = 0x01 && tmpB = 0x00){
-            tmpC = 0x01;
+            tmpC = (tmpC & 0xFE) | 0x01;
         }else{
-            tmpC = 0x00;
+            tmpC = (tmpC & 0xFE ) | 0x00;
         }
            
         
