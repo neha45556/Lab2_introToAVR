@@ -24,7 +24,7 @@ int main(void) {
     while (1) {
         tmpA = PINA & 0x01;
         tmpB = PINA & 0x02;
-        if(tmpA = 0x01 && tmpB = 0x00){
+        if(tmpA == 0x01 && tmpB == 0x00){
             tmpC = (tmpC & 0xFE) | 0x01;
         }else{
             tmpC = (tmpC & 0xFE ) | 0x00;
