@@ -39,10 +39,10 @@ int main(void) {
         if(tmpB == 0x02){
             --cntavail;
         }
-        if(tmpA == 0x04){
+        if(tmpC == 0x04){
             --cntavail;
         }
-        if(tmpA == 0x08){
+        if(tmpD == 0x08){
             --cntavail;
         }
            
