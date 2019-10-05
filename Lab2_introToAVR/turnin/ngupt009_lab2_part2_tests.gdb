@@ -50,9 +50,23 @@ continue 5
 expectPORTC 0x03
 checkResult
 
+test “PINA: 0x03 => PORTC: 0x02”
+setPINA 0x03
+continue 5
+expectPORTC 0x02
+checkResult
 
+test “PINA: 0x0F => PORTC: 0x00”
+setPINA 0x0F
+continue 5
+expectPORTC 0x00
+checkResult
 
-
+test “PINA: 0x07 => PORTC: 0x01”
+setPINA 0x07
+continue 5
+expectPORTC 0x01
+checkResult
 
 
 # Add tests below
