@@ -45,7 +45,10 @@ int main(void) {
         if(tmpD == 0x08){
             --cntavail;
         }
-           
+          
+        if(cntavail == 0){
+            cntavail = 0x80;
+        }
         
         PORTC = cntavail;
         cntavail = 4 ;
